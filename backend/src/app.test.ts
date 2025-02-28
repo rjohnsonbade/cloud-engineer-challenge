@@ -1,19 +1,6 @@
-import { describe, it } from 'node:test';
+import { it } from 'node:test';
 import assert from 'node:assert';
-import { createTodoApp, TodoAdd, TodoList, TodoStore } from './app';
-import { createStore } from './store';
-
-// Testing todos app
-
-// LIST TODOS
-
-// CREATE TODO
-
-// UPDATE TODO
-
-// DELETE TODO
-
-//
+import { createTodoApp, TodoAdd, TodoList, createStore } from './app';
 
 it('lists todos', () => {
   const todos: TodoList = [

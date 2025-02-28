@@ -1,1 +1,0 @@
-export {fastify} from './server';

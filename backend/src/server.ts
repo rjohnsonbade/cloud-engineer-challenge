@@ -1,11 +1,19 @@
 import Fastify from 'fastify'
-import { createTodoApp, createStore, TodoAdd, TodoUpdate } from './app'
+import cors from '@fastify/cors'
+import { createTodoApp, TodoAdd, TodoUpdate } from './app'
+import { createInMemoryStore } from './store/inMemeoryStore';
 
-const todoApp = createTodoApp({store: createStore()});
+const todoApp = createTodoApp({store: createInMemoryStore()});
 
 const fastify = Fastify({
   logger: { level: 'error' }
 })
+
+fastify.register(cors, {
+  origin: true,
+  methods: ['GET', 'POST', 'DELETE']
+});
+
 
 // GET / for list
 fastify.get('/', (request, reply) => {

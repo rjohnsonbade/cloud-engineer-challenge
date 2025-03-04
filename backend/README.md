@@ -13,11 +13,11 @@ npm install
 # Start Dev Server
 npm run dev
 
-# Run Tests
-npm run test
-
 # Build
 npm run build
+
+# Run Tests (from built files)
+npm run test
 
 # Start Server
 npm run start
@@ -51,8 +51,7 @@ curl --request POST \
 ### Remove Todo
 ```
 curl --request DELETE \
-  --url http://localhost:3000/{id} \
-  --header 'content-type: application/json'
+  --url http://localhost:3000/{id}
 ```
 
 ## Error Handling

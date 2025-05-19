@@ -22,8 +22,8 @@ Your job is to design a solution to meet the above requirements.
 
 You are encouraged to fork this repository and make any updates required to achieve the above.
 
-The tools and technologies you use are totally up to you, the only requirements are listed above.
+The tools and technologies you use are totally up to you, the only requirements are listed above, as well as any information you might take from the job posting.
 
-At a bare minimum, you should submit documentation which details your solution and how you would implement it; however if you have time you may also choose to implement some of your solution within this repository.
+At a bare minimum, you should submit documentation which details your solution and how you would implement it; however you may also choose to implement your solution within this repository.
 
 If you identify requirements which you think would be useful in ongoing delivery of this project, but are not listed here, feel free to add them to your solution.
